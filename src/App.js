@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+var mongoose = require("mongoose");
+
+var url = 'mongodb://sid:sid3030@ds155864.mlab.com:55864/votingapp';
+
+
+try {
+  mongoose.connect(url, {
+      //useMongoClient: true
+  })    
+} catch (error) {
+  console.log("mongo connect error")
+  
+}
+
+
 
 class App extends Component {
   render() {
