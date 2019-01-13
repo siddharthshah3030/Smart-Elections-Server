@@ -8,6 +8,9 @@ var mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var db = require('./data/main');
+
+
 //Set up default mongoose connection
 var mongoDB = 'mongodb://sid:sid3030@ds155864.mlab.com:55864/votingapp';
 mongoose.connect(mongoDB);
@@ -16,8 +19,31 @@ mongoose.Promise = global.Promise;
 //Get the default connection
 var db = mongoose.connection;
 
+
 //Bind connection to error event (to get notification of connection errors)
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+var schema = new mongoose.Schema({ name: 'string', size: 'string' });
+var Tank = mongoose.model('Tank', schema);
+
+var small = new Tank({ size: 'small' });
+small.save(function (err) {
+  if (err) return handleError(err);
+  // saved!
+});
+
+// or
+
+Tank.create({ size: 'small' }, function (err, small) {
+  if (err) return handleError(err);
+  // saved!
+});
+
+// or, for inserting large batches of documents
+Tank.insertMany([{ size: 'small' }], function(err) {
+
+});
+
 
 var app = express();
 
