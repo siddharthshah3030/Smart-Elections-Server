@@ -10,6 +10,10 @@ try {
   mongoose.connect(url, {
       //useMongoClient: true
   })    
+  var schema = new mongoose.Schema({ name: 'string', verified: 'bool', voted: 'bool', location: 'string' });
+  var voters = mongoose.model('voters', schema);
+
+
 } catch (error) {
   console.log("mongo connect error")
   
