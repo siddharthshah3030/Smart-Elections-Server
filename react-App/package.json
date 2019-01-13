@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.16.4",
+    "express-generator": "^4.16.0",
     "mongo": "^0.1.0",
     "mongodb": "^3.1.10",
     "mongoose": "^5.4.3",
