@@ -5,6 +5,6 @@ var schema = new mongoose.Schema({
     candidates : [ {name : String, party : { name : String ,abb: String, symbol : String}} ]
 })
 
-var region = mongoose.model('region', schema);
+ region = mongoose.model('region', schema);
 
 

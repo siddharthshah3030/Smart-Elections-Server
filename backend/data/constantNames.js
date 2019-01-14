@@ -11,3 +11,16 @@ var parties = [
     'Shiv Sena',
     'Samajwadi Party'
 ]
+var symbol = [
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+    'stringUrl',
+]
