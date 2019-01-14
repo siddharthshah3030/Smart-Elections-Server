@@ -6,7 +6,9 @@ var mongoose = require('mongoose');
 var locations = require('./schema/location'); 
 var voter = require('./schema/voter'); 
 
+
+// seed only when needed 
 //Seeding
-//var candies = require('./seedCandidate');
-var voterLog = require('./seedVoter');
+// var candies = require('./seedCandidate');
+// var voterLog = require('./seedVoter');
 

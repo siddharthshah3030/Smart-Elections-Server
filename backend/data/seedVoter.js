@@ -4,17 +4,9 @@ var faker = require('faker')
 var mongoose = require('mongoose');
 var db = require('./schema/voter');
 
-
-
-
-
-
 faker.locale = "en_IND";
 
-
-
-
-for(var i=111;i<112;i++){
+for(var i=111;i<10000;i++){
     var cnt = i%100;
     if(i==0){ cntx = 100;}
     faker.seed(i);
@@ -32,11 +24,6 @@ for(var i=111;i<112;i++){
          voted: 0,
          votedTo: null,
 })
-
-
-
-
-    
 
         console.log(user)
     user.save(function (err) {
