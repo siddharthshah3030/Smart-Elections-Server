@@ -12,7 +12,9 @@ var schema = new mongoose.Schema({
     streetaddress : String,
     voted: Boolean,
     votedTo: String,
-    region: String
+
+    region: String,
+    identity: String
 
 })
 

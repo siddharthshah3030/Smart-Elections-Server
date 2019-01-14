@@ -6,7 +6,19 @@ var db = require('./schema/voter');
 
 faker.locale = "en_IND";
 
-for(var i=111;i<10000;i++){
+function makeid() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 256; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+  }
+  
+  console.log(makeid());
+
+for(var i=111;i<10200;i++){
     var cnt = i%100;
     if(i==0){ cntx = 100;}
     faker.seed(i);
@@ -23,6 +35,7 @@ for(var i=111;i<10000;i++){
          streetaddress : faker.address.streetAddress(),
          voted: 0,
          votedTo: null,
+         identity : makeid()
 })
 
         console.log(user)
@@ -32,3 +45,5 @@ for(var i=111;i<10000;i++){
       console.log("error in seeding voter")
     });
 }
+
+

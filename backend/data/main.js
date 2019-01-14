@@ -10,5 +10,8 @@ var voter = require('./schema/voter');
 // seed only when needed 
 //Seeding
 // var candies = require('./seedCandidate');
-// var voterLog = require('./seedVoter');
+ //var voterLog = require('./seedVoter');
+
+
+
 
