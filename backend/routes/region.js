@@ -5,6 +5,8 @@ var mongoose = require('mongoose');
 
 
 
+
+
 /* GET home page. */
 router.get('/:name', function(req, res, next) {
     var name = req.params.name;
