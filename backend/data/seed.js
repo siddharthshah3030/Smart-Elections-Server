@@ -32,9 +32,10 @@ var symbol = [
 str = JSON.stringify(cn);
 console.log(str);
 str = JSON.stringify(cn, null, 4); // (Optional) beautiful indented output.
+var cnt = 1;
 for(var i=0;i<501;i++){
-    var location = new region( {   name:    "Location"+i })
-
+    var location = new region( {   name:    "location"+(cnt) })
+    cnt++;
         while(1){
             
             candi =  {name : "candidate_"+i, 
