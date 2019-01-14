@@ -1,11 +1,13 @@
 # Smart Elections 
 
 #### api get request 
-- localhost:5000/region/location1
-- localhost:5000/region/location2
-- localhost:5000/region/location3
-- to 
-- localhost:5000/region/location100
+- https://smartelectionsapi.herokuapp.com/region/location1
+- https://smartelectionsapi.herokuapp.com/region/location2
+- https://smartelectionsapi.herokuapp.com/region/location3
+ - to
+ - https://smartelectionsapi.herokuapp.com/region/location100
+
+
 
 #### output description : 
 - you provide location name 
