@@ -50,18 +50,18 @@ for(var i=0;i<10;i++){
     // var cnt = i%100;
     // if(i==0){ cntx = 100;}
     // faker.seed(i);
-    var party = new party( {  
-         name : party[i],
+    var newparty = new party( {  
+         name : parties[i],
          abb : abbParties[i],
 
          identity : makeid()
 })
 
         console.log(party)
-    party.save(function (err) {
+        newparty.save(function (err) {
       if (err) return handleError(err);
       // saved!
-      console.log("error in seeding voter")
+      console.log("error in seeding party")
     });
 }
 
