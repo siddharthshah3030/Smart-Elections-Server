@@ -1,6 +1,9 @@
 var mongoose = require('mongoose');
 var cn = require('./constantNames');
 var db = require('./schema/location');
+var faker = require('faker')
+faker.locale = "en_IND";
+
 
 var abbParties = ['BJP', 'AITC', 'BSP', 'CPI', 'INC', 'NCP', 'AAP', 'NPP', 'SS', 'SP'];
 var parties = [
@@ -34,7 +37,7 @@ console.log(str);
 str = JSON.stringify(cn, null, 4); // (Optional) beautiful indented output.
 var cnt = 1;
 for (var i = 0; i < 501; i++) {
-    var location = new region({
+    var location = new campaign({
         name: "location" + (cnt)
     })
     cnt++;
