@@ -1,0 +1,1 @@
+console.log("hell from block chain party seeding ")
