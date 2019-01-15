@@ -1,16 +1,15 @@
 var mongoose = require('mongoose');
 
-var express = require('express');
-var router = express.Router();
-var mongoose = require('mongoose');
-
-
 //Schemas
 var locations = require('./schema/location'); 
 var voter = require('./schema/voter'); 
 var party = require('./schema/party'); 
 
-var abcd = require('./seedBlockchain/partyBlockchain'); 
+
+// @Shritesh your calls will be all here 
+// uncommment when needed
+// var abcd = require('./seedBlockchain/partyBlockchain'); 
+
 
 // seed only when needed 
 //Seeding
