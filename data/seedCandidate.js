@@ -46,7 +46,7 @@ str = JSON.stringify(cn);
 console.log(str);
 str = JSON.stringify(cn, null, 4); // (Optional) beautiful indented output.
 var cnt = 1;
-for (var i = 0; i < 501; i++) {
+for (var i = 0; i < 500; ) {
     faker.seed(i);
 
     var location = new campaign({
