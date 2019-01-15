@@ -15,19 +15,21 @@ function makeid() {
   }
   
 
-var abbParties = ['BJP', 'AITC', 'BSP', 'CPI', 'INC', 'NCP', 'AAP', 'NPP', 'SS', 'SP'];
+// var abbParties = ['BJP', 'AITC', 'BSP', 'CPI', 'INC', 'NCP', 'AAP', 'NPP', 'SS', 'SP'];
 var parties = [
-    'Bharatiya Janata Party',
-    'All India Trinamool Congress',
-    'Bahujan Samaj Party',
-    'Communist Party of India',
-    'Indian National Congress',
-    'Nationalist Congress Party',
-    'Aam Aadmi Party',
-    "National People's Party",
-    'Shiv Sena',
-    'Samajwadi Party'
+
+    ['Bharatiya Janata Party','BJP'],
+    ['All India Trinamool Congress','AITC'],
+    ['Bahujan Samaj Party','BSP'],
+    ['Communist Party of India','CPI'],
+    ['Indian National Congress','INC'],
+    ['Nationalist Congress Party','NCP'],
+    ['Aam Aadmi Party','AAP'],
+    ["National People's Party",'NPP'],
+    ['Shiv Sena','SS'],
+    ['Samajwadi Party','SP']
 ]
+var PAR = parties
 var symbol = [
     'stringUrl',
     'stringUrl',
