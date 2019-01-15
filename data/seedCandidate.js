@@ -4,6 +4,16 @@ var db = require('./schema/location');
 var faker = require('faker')
 faker.locale = "en_IND";
 
+function makeid() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 256; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+  }
+  
 
 var abbParties = ['BJP', 'AITC', 'BSP', 'CPI', 'INC', 'NCP', 'AAP', 'NPP', 'SS', 'SP'];
 var parties = [
@@ -37,14 +47,21 @@ console.log(str);
 str = JSON.stringify(cn, null, 4); // (Optional) beautiful indented output.
 var cnt = 1;
 for (var i = 0; i < 501; i++) {
+    faker.seed(i);
+
     var location = new campaign({
-        name: "location" + (cnt)
-    })
+        name: "location" + (cnt),
+        locationName : faker.name.streetName,
+        chairPName : faker.name.findName,
+        ChairPIdentity : makeid(),
+        })
     cnt++;
+    faker.seed(501 + i);
+
     while (1) {
 
         candi = {
-            name: "candidate_" + i,
+            name: faker.name.findName,
             party: {
                 name: parties[i % 10],
 
