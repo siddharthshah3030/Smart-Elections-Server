@@ -31,12 +31,3 @@ var abcd = require('./seedBlockchain/partyBlockchain');
 //     });
 // }
 // )
-var name = "lovation3";
-
-setTimeout(function() {
-    
-    console.log( "inside main file");
-    region.find().exec(function (err, doc) {
-        console.log( doc );
-    });
-}, 3000);

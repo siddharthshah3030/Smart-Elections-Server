@@ -2,16 +2,25 @@
 // var parties = require('../schema/party'); 
 
 
+var ij = 1;
+party.find({}, function(err, currentParty) {
+    // console.log("inside findx of parties for block chain")
+    
+    currentParty.forEach(function(partyInstance) {
+        // @shritesh do you function here
+        console.log(ij)
+        ij++
 
-// mongoose.party.find({}, function(err, party) {
-//     console.log("inside findx of parties for block chain")
-//     var userMap = {};
-//     console.log(party)
+    });
+}
+)
 
-//     party.forEach(function(user) {
-//       userMap[user._id] = user;
+// // console.log("hell from block chain party seeding ")
+// var name = "lovation3";
+
+    
+//     console.log( "inside main file");
+//     party.find().exec(function (err, doc) {
+//         console.log( doc );
 //     });
-// }
-// )
 
-// console.log("hell from block chain party seeding ")
