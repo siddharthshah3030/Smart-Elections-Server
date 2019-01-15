@@ -10,7 +10,6 @@ var usersRouter = require('./routes/users');
 var region = require('./routes/region');
 
 
-var db = require('./data/main');
 
 
 //Set up default mongoose connection
@@ -24,6 +23,7 @@ var db = mongoose.connection;
 
 //Bind connection to error event (to get notification of connection errors)
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+var db = require('./data/main');
 
 var schema = new mongoose.Schema({ name: 'string', size: 'string' });
 var Tank = mongoose.model('Tank', schema);
