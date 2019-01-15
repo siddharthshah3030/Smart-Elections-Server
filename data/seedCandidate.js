@@ -51,8 +51,8 @@ for (var i = 0; i < 501; i++) {
 
     var location = new campaign({
         name: "location" + (cnt),
-        locationName : faker.name.streetName,
-        chairPName : faker.name.findName,
+        locationName : faker.address.streetName(),
+        chairPName : faker.name.findName(),
         ChairPIdentity : makeid(),
         })
     cnt++;
@@ -61,7 +61,7 @@ for (var i = 0; i < 501; i++) {
     while (1) {
 
         candi = {
-            name: faker.name.findName,
+            name: faker.name.findName(),
             party: {
                 name: parties[i % 10],
 
