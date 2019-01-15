@@ -20,14 +20,3 @@ var abcd = require('./seedBlockchain/partyBlockchain');
 
 
 
-
-// party.find({}, function(err, party) {
-//     console.log("inside findx of parties for block chain")
-//     var userMap = {};
-//     console.log(party)
-
-//     party.forEach(function(user) {
-//       userMap[user._id] = user;
-//     });
-// }
-// )
