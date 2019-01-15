@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var cn = require('./constantNames');
 var db = require('./schema/location');
 
-var abbParties = ['BJP','AITC','BSP','CPI','INC', 'NCP','AAP','NPP','SS','SP'];
+var abbParties = ['BJP', 'AITC', 'BSP', 'CPI', 'INC', 'NCP', 'AAP', 'NPP', 'SS', 'SP'];
 var parties = [
     'Bharatiya Janata Party',
     'All India Trinamool Congress',
@@ -33,33 +33,35 @@ str = JSON.stringify(cn);
 console.log(str);
 str = JSON.stringify(cn, null, 4); // (Optional) beautiful indented output.
 var cnt = 1;
-for(var i=0;i<501;i++){
-    var location = new region( {   name:    "location"+(cnt) })
+for (var i = 0; i < 501; i++) {
+    var location = new region({
+        name: "location" + (cnt)
+    })
     cnt++;
-        while(1){
-            
-            candi =  {name : "candidate_"+i, 
-        party : { name : parties[i%10] ,
-            
-            abb:abbParties[i%10], 
+    while (1) {
 
-            symbol : symbol[i%10]}
-        } 
+        candi = {
+            name: "candidate_" + i,
+            party: {
+                name: parties[i % 10],
+
+                abb: abbParties[i % 10],
+
+                symbol: symbol[i % 10]
+            }
+        }
         location.candidates.push(candi)
         i++;
-        if(i%5==0){
+        if (i % 5 == 0) {
             break;
         }
-        };
+    };
 
-    
 
-        console.log(location)
-    location.save(function (err) {
-      if (err) return handleError(err);
-      // saved!
+
+    console.log(location)
+    location.save(function(err) {
+        if (err) return handleError(err);
+        // saved!
     });
 }
-
-
-
