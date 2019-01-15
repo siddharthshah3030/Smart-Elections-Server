@@ -1,5 +1,9 @@
 # Smart Elections 
 
+#### seed Block chain parties with identity
+data/seedBlockchain/partyBlockchain.js
+this is the file
+just add your function there
 #### api get request 
 - https://smartelectionsapi.herokuapp.com/region/location1
 - https://smartelectionsapi.herokuapp.com/region/location2
