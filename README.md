@@ -1,5 +1,7 @@
 # Smart Elections 
 
+#### for running blockChain codes make sure to uncomment the calls
+ - data/main.js
 #### seed Block chain parties with identity
 data/seedBlockchain/partyBlockchain.js
 this is the file
