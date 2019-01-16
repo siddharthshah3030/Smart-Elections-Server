@@ -69,7 +69,7 @@ for (var i = 0; i < 500; ) {
         name: "location" + (cnt),
         locationName : faker.address.streetName(),
         chairPName : faker.name.findName(),
-        ChairPIdentity : makeid(),
+        ChairPAdd : makeAd(),
         })
     cnt++;
     faker.seed(501 + i);
@@ -83,7 +83,8 @@ for (var i = 0; i < 500; ) {
 
                 abb: PAR[i % 10][1],
 
-                symbol: PAR[i % 10][2]
+                symbol: PAR[i % 10][2],
+                partyId : PAR[i%10][3]
             }
         }
         location.candidates.push(candi)
