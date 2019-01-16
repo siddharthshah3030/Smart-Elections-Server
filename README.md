@@ -13,7 +13,7 @@
 </p>
 
 ## Workflow -
-![process image here](public/process001.jpeg?raw=true "process of voting")
+![process image here](public/process001.png?raw=true "process of voting")
 
 #### @shritesh99 
  - a transaction to get results stored in block chain will give me what attributes and values
