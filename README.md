@@ -1,5 +1,21 @@
 # Smart Elections 
 
+
+#### @shritesh 
+ - a transaction to get results stored in block chain will give me what attributes and values
+ - expecting 
+```sh
+100 campaigns with their identity 
+each campaign has 100 voters approx
+
+so 100 votes with their party ID
+ OR
+  PartyID with their total votes in that campaign
+
+also,the number of people who have not voted which will be there
+
+```
+
 #### for running blockChain codes make sure to uncomment the calls
  - data/main.js
 #### seed Block chain parties with identity
