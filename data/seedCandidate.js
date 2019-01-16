@@ -49,6 +49,8 @@ console.log(str);
 str = JSON.stringify(cn, null, 4); // (Optional) beautiful indented output.
 var cnt = 1;
 for (var i = 0; i < 500; ) {
+    PAR.sort( function() { return 0.5 - Math.random() } );
+
     faker.seed(i);
 
     var location = new campaign({
@@ -65,9 +67,9 @@ for (var i = 0; i < 500; ) {
         candi = {
             name: faker.name.findName(),
             party: {
-                name: parties[i % 10],
+                name: PAR[i % 10][0],
 
-                abb: abbParties[i % 10],
+                abb: PAR[i % 10][1],
 
                 symbol: symbol[i % 10]
             }
