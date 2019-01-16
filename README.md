@@ -1,7 +1,21 @@
-# Smart Elections 
+# Smart Elections
 
+### Smart Elections Based on Decentralised Ethereum Blockchain Network. An attempt to improve India's current election system using Ethereum Blockchain Network.
 
-#### @shritesh 
+### Etherum Smart Contracts Repository [here](https://github.com/Shritesh99/Smart-Elections_Solidity)
+
+### Voting Machine Repository [here](https://github.com/utkarshchandrakar/smart-elections)
+
+### This Repository consist of etherum side smart contract code for Smart Elections.
+
+<p align="center">
+  <img src="https://github.com/Shritesh99/Smart-Elections_Solidity/blob/master/imgs/Canvas%205.jpg" />
+</p>
+
+## Workflow -
+Coming soon.
+
+#### @shritesh99 
  - a transaction to get results stored in block chain will give me what attributes and values
  - expecting 
 ```sh
