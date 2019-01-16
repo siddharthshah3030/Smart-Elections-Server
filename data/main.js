@@ -13,7 +13,7 @@ var party = require('./schema/party');
 
 // seed only when needed 
 //Seeding
-var candies = require('./seedCandidate');
+// var candies = require('./seedCandidate');
  //var voterLog = require('./seedVoter');
 //  var partylog = require('./seedParty');
 

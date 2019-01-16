@@ -18,31 +18,33 @@ function makeid() {
 // var abbParties = ['BJP', 'AITC', 'BSP', 'CPI', 'INC', 'NCP', 'AAP', 'NPP', 'SS', 'SP'];
 var parties = [
 
-    ['Bharatiya Janata Party','BJP'],
-    ['All India Trinamool Congress','AITC'],
-    ['Bahujan Samaj Party','BSP'],
-    ['Communist Party of India','CPI'],
-    ['Indian National Congress','INC'],
-    ['Nationalist Congress Party','NCP'],
-    ['Aam Aadmi Party','AAP'],
-    ["National People's Party",'NPP'],
-    ['Shiv Sena','SS'],
-    ['Samajwadi Party','SP']
+    ['Bharatiya Janata Party','BJP','url0'],
+    ['All India Trinamool Congress','AITC','url1'],
+    ['Bahujan Samaj Party','BSP','url2'],
+    ['Communist Party of India','CPI','url3'],
+    ['Indian National Congress','INC','url4'],
+    ['Nationalist Congress Party','NCP','url5'],
+    ['Aam Aadmi Party','AAP','url6'],
+    ["National People's Party",'NPP','url7'],
+    ['Shiv Sena','SS','url8'],
+    ['Samajwadi Party','SP','url9']
 ]
+
+// a copy to make changes and shuffle 
 var PAR = parties
-var symbol = [
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-    'stringUrl',
-]
+// var symbol = [
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+//     'stringUrl',
+// ]
 
 str = JSON.stringify(cn);
 console.log(str);
@@ -71,7 +73,7 @@ for (var i = 0; i < 500; ) {
 
                 abb: PAR[i % 10][1],
 
-                symbol: symbol[i % 10]
+                symbol: PAR[i % 10][2]
             }
         }
         location.candidates.push(candi)
