@@ -14,6 +14,16 @@ function makeid() {
     return text;
   }
   
+  function makeAd() {
+    var text = "";
+    var possible = "ABCDEF0123456789";
+  
+    for (var i = 0; i < 256; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+  }
+  
 
 // var abbParties = ['BJP', 'AITC', 'BSP', 'CPI', 'INC', 'NCP', 'AAP', 'NPP', 'SS', 'SP'];
 var parties = [
