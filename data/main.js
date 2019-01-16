@@ -8,7 +8,8 @@ var party = require('./schema/party');
 
 // @Shritesh your calls will be all here 
 // uncommment when needed
-// var abcd = require('./seedBlockchain/partyBlockchain'); 
+// var a1 = require('./seedBlockchain/partyBlockchain'); 
+var a2 = require('./seedBlockchain/campaignBlockchain'); 
 
 
 // seed only when needed 
