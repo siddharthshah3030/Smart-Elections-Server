@@ -6,7 +6,7 @@ var schema = new mongoose.Schema({
     chairPName : String,
     ChairPAdd: String,
 
-    candidates : [ {name : String, party : { name : String ,abb: String, symbol : String, partyId : String}} ]
+    candidates : [ {name : String,candidateId : String, party : { name : String ,abb: String, symbol : String, partyId : String}} ]
 })
 
  campaign = mongoose.model('campaign', schema);

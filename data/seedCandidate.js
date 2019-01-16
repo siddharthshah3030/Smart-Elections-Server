@@ -67,6 +67,7 @@ for (var i = 0; i < 500; ) {
 
     var location = new campaign({
         name: "location" + (cnt),
+        candidateId : makeid(),
         locationName : faker.address.streetName(),
         chairPName : faker.name.findName(),
         ChairPAdd : makeAd(),
