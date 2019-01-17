@@ -10,8 +10,14 @@ var usersRouter = require('./routes/users');
 var region = require('./routes/region');
 
 
-
+//SiD
+// below code seems to run ans work but still some errors are not fixed  
+var Web3 = require('web3');
 var etherum = require('./etherum');
+// import { Drizzle, generateStore } from 'drizzle';
+// import { Drizzle, generateStore } from 'drizzle'
+var drizzle = require('drizzle');
+console.log(drizzle)
 
 //Set up default mongoose connection
 var mongoDB = 'mongodb://sid:sid3030@ds155864.mlab.com:55864/votingapp';
