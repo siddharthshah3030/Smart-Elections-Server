@@ -47,68 +47,84 @@ also,the number of people who have not voted which will be there
   name: 'Shiv Sena',
   abb: 'SS',
   identity:
-   'lKaxc5so2G3hNpTEFnDYIDtXb8OIdS7zVnQWbpLQgh1mTxfzVyIKIesUqnFajZpa5QevLFCRfSrSqckqB5fwHfjXdp1XAxygCu1XflTMIBYWMQvHqryPPzStzFhQpUPXq6AAakbSXts1mZznvipRSRdscV4woAP2lYUoARqUHR9QJpECyfGaPZymejBrpIC1D8Z8Y1CEYHce9dLOpeZ8oJFueB3zcqej5zmuK1y877ATmg6WEOBH55Q7KqKCLDqD',
+   '0Jz8yt58G5LK7gHcn8o1T5HBXBEvXX9yeFlBaRBkDbzopcRXiIqeXgc49hA2x6XAwk6PgyXmHvRo5ICYHxqaiqQfwXrwrWvlGjvV4S3YWhzy9soqUbg0iQPIjsbsptP07JTNUyCniXTdO8kDk3hTxHhDNx6pbvm0pbyxsdkEGh6qkxNkSdUPgriFy6hd1SblOBqOcRx4flhR7IMurkKrGf3Yl0AN8qp206SCPuVcAIOAc0iVREWz3ZeziQMI6tu9',
   __v: 0 }
 ```
 
 ### sample campaign
 ```sh
 {
-    "_id": "5c3e74d079644b4bf7144c6b",
-    "name": "location100",
-    "locationName": "Varman Glen",
-    "chairPName": "Shwet Khanna",
-    "ChairPIdentity": "i4WNVSvpaR8SgSHtRrsFJwysKqk5bUtriQ581vGbYJGdyYZvTAAbApBSCHDMfnpXj7SIWxcFvJzc0RhliOaxC4lVtDZENdCEo08PHOCxjtfdcUgUdxu0oZevz0tBdHpLeLJEJfSpZ61wOMgNmUwtFTz2B1lDVi4F5bmXblR3WGbjRR8meaqzldDlosCtMYMX7GRxtpZ4Dd7duGPKz7OwT8dO0kPJI4bioRwtwDK45GbXKAVY1Ysd5tIYbfz8Hon9",
+    "_id": {
+        "$oid": "5c3fc585278736677c74d441"
+    },
+    "name": "location1",
+    "locationName": "Agarwal Canyon",
+    "chairPName": "Agnimitra Varman",
+    "ChairPAdd": "5f47116d6e50a73d3406a9c4ab6824737e444de2",
     "candidates": [
         {
-            "party": {
-                "name": "Bharatiya Janata Party",
-                "abb": "BJP",
-                "symbol": "url0"
+            "_id": {
+                "$oid": "5c3fc585278736677c74d442"
             },
-            "_id": "5c3e74d079644b4bf7144c6c",
-            "name": "Shreyashi Iyengar DVM"
-        },
-        {
+            "name": "Bankim Nambeesan Jr.",
             "party": {
                 "name": "Samajwadi Party",
                 "abb": "SP",
-                "symbol": "url9"
-            },
-            "_id": "5c3e74d079644b4bf7144c6d",
-            "name": "Rita Gill III"
+                "symbol": "url9",
+                "partyId": "rNRnPfv7DuswtUEfT6ULXPWEV0r59J66AsIMSLAC8jOTHZg1yrlSunNItC7WQsM59yjKIaQKq6F2eqb9m0eSWw243QUjtYxXgJTAMWGPlUfKNjKOPNcDCcfU4qvx4m72UNOdkkoNxfSAX0M24Ehn8yxTVaAOnFFzMDVNI1cgMPJKGevrOQDmGWVJYAuimqcThCCYKkFOGz0tDvnjz2bQKRGI649s3zWUnlYXQgY5W4S9BUTlR4snftpUNTQpR4Pg"
+            }
         },
         {
-            "party": {
-                "name": "Bahujan Samaj Party",
-                "abb": "BSP",
-                "symbol": "url2"
+            "_id": {
+                "$oid": "5c3fc585278736677c74d443"
             },
-            "_id": "5c3e74d079644b4bf7144c6e",
-            "name": "Bala Mehrotra"
-        },
-        {
-            "party": {
-                "name": "Nationalist Congress Party",
-                "abb": "NCP",
-                "symbol": "url5"
-            },
-            "_id": "5c3e74d079644b4bf7144c6f",
-            "name": "Chakradhar Ganaka"
-        },
-        {
+            "name": "Bilva Pilla",
             "party": {
                 "name": "Aam Aadmi Party",
                 "abb": "AAP",
-                "symbol": "url6"
+                "symbol": "url6",
+                "partyId": "G0GcG9GqWxcQ2FBfwd2YHEDyYJ3uIjFf5OFbCH2luwJ5OaT1mkPt05qUWQN1XjanF7q4O0gpU0cSBcSaTuuXWM1PImCwT3OzYxqpPTjZ6GiLP5o8jI25z7joHvySSpmXVMas9hQpZStJ3RuucaUEcpjs1BIYPZWJk0Pm6uHhbV4vIhZIHXyn1WIAKGhQZbQKmtCD2V059zH37ZAbiyPSyRsXdVZlJElf2g1mkXhW79cluYI7c24EtevAIHTswFcA"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "5c3fc585278736677c74d444"
             },
-            "_id": "5c3e74d079644b4bf7144c70",
-            "name": "Tejas Pillai"
+            "name": "Devagya Kakkar",
+            "party": {
+                "name": "Communist Party of India",
+                "abb": "CPI",
+                "symbol": "url3",
+                "partyId": "EjkUsnRIHNAgOnvllc9nwL44O8BfHvVtfqpGnoZAHfqJXrtcXy1uY0R27YWJ0Hu5DZ6X00ow1MYnR13cfYBI9OnR8b4HnuCPPT8FGfJaY7zWZp2f8uagBLjfB0K8u9KD4Yq22fkSZcVrDycd1T8sw0yMDfQlCNTWnAqIVuhubUUTccCE8SmVzzo75SMwM7EtWBLKbLhje54cGhe247kykpQxhzonM4u10NAfcomLBLu3s4lAVPhFtUkm62k4Hqrp"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "5c3fc585278736677c74d445"
+            },
+            "name": "Anand Swarup Sinha",
+            "party": {
+                "name": "Bharatiya Janata Party",
+                "abb": "BJP",
+                "symbol": "url0",
+                "partyId": "F7JoWf6gro5PXhfSlkrBwkjo57CihkxiYoVN0Q0vzvW2OUPUY93GspIWqY6p8H4owW9e4GDB3Di4JJzyuy8USLcONmLYxQEsrJZVUxByvQQkbW8SralXlDAXzaOoMlxVV9NFlYJGsiKczLg1txk7JbHYejZd8vXhbl7WzKiEIR0UqxiWFvWivsze2IShJ2A4w80HaOcv367XYuuNNVTn6LShZlYLkQQ5Tty7iBal1g6eCWQOIpHeAZnFlt64l4B4"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "5c3fc585278736677c74d446"
+            },
+            "name": "Adwitiya Devar",
+            "party": {
+                "name": "Nationalist Congress Party",
+                "abb": "NCP",
+                "symbol": "url5",
+                "partyId": "ypnTZJwusiws0Hlaa1S9dJEbyrW55UrO0JikBbQpdFp3uTfJy1gmnJDjKtH2zaFaBqmvYlSApUC0Z1xI8q37OdybeIHrvJ0tMYP3RRNiIQ1v8WznpPSbBmPoezJOyfw5Q9PPLz4keUbrGhnX53shfRLT14HUX9VUj0BzICiYYSb9GvpT4AJH9yWqwf4UbI1r7KEs0lCUf3aMUhBpxS7Tjk82sCsyuCyjGLoGuK4sKRepQjaeQtebYxc6qN4OSjxO"
+            }
         }
     ],
     "__v": 0
 }
-
 ```
 
 
