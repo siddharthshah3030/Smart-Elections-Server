@@ -16,9 +16,9 @@ function makeid() {
   
   function makeAd() {
     var text = "";
-    var possible = "ABCDEF0123456789";
+    var possible = "abcdef0123456789";
   
-    for (var i = 0; i < 256; i++)
+    for (var i = 0; i < 40; i++)
       text += possible.charAt(Math.floor(Math.random() * possible.length));
   
     return text;
@@ -67,7 +67,6 @@ for (var i = 0; i < 500; ) {
 
     var location = new campaign({
         name: "location" + (cnt),
-        candidateId : makeid(),
         locationName : faker.address.streetName(),
         chairPName : faker.name.findName(),
         ChairPAdd : makeAd(),
@@ -81,6 +80,7 @@ for (var i = 0; i < 500; ) {
             name: faker.name.findName(),
             party: {
                 name: PAR[i % 10][0],
+                candidateId : makeid(),
 
                 abb: PAR[i % 10][1],
 
