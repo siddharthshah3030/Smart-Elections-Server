@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var region = require('./routes/region');
 
 
-
+import { Drizzle, generateStore } from 'drizzle';
 
 //Set up default mongoose connection
 var mongoDB = 'mongodb://sid:sid3030@ds155864.mlab.com:55864/votingapp';
