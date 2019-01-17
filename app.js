@@ -11,6 +11,7 @@ var region = require('./routes/region');
 
 
 
+var etherum = require('./etherum');
 
 //Set up default mongoose connection
 var mongoDB = 'mongodb://sid:sid3030@ds155864.mlab.com:55864/votingapp';
