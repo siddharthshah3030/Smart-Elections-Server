@@ -15,6 +15,15 @@ function makeid() {
   
     return text;
   }
+  function makesmallid() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 10; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+  }
   
   console.log(makeid());
 
@@ -35,7 +44,8 @@ for(var i=111;i<10200;i++){
          streetaddress : faker.address.streetAddress(),
          voted: 0,
          votedTo: null,
-         identity : makeid()
+         identity : makeid(),
+         id : makesmallid()
 })
 
         console.log(user)

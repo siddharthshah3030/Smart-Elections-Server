@@ -14,7 +14,8 @@ var schema = new mongoose.Schema({
     votedTo: String,
 
     region: String,
-    identity: String
+    identity: String,
+    id: String
 
 })
 
