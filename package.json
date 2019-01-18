@@ -17,6 +17,7 @@
     "mongo": "^0.1.0",
     "mongoose": "^5.4.3",
     "morgan": "~1.9.0",
+    "ms": "^2.1.1",
     "nodemon": "^1.18.9",
     "random-user-generator": "^0.2.0",
     "web3": "^1.0.0-beta.37"
