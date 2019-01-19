@@ -36,6 +36,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 var db = require('./data/main');
 
 var app = express();
+app.set('trust proxy', true)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

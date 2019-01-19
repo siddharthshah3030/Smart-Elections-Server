@@ -18,8 +18,8 @@ router.post('/',function(req,res){
         campaign.findOne({ name: voter.region }, function (err, location) {
             var str = "hell yeah ";
             var int = 1;
-            console.log(location.candidates[button].party.partyId)
-
+            console.log(location.candidates[button].candidateId)
+            var candidateId = location.candidates[button].candidateId;
         console.log(str )
 
         // res.send("inside post");

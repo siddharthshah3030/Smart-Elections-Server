@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 // var arr = [1,2,3,4]
 // for (let i of arr) {
 //   console.log(i);
@@ -9,6 +10,10 @@ var router = express.Router();
 // import react from react
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  // var ip = req.headers['x-real-ip']
+  // console.log("testing ip address")
+  // console.log(req.connection.remoteAddress)
+  // console.log(req.ip)
   res.render('dashboard', { title: 'dashboard' });
 });
 router.get('/home', function(req, res, next) {
