@@ -8,13 +8,13 @@ var userid = "5c4244d5b1a3cc0e3c904cec";
 router.post('/',function(req,res){
     var tempBody = {
         userid : "5c4244d5b1a3cc0e3c904cec"
-
     }
     // console.log(req.body);
-    str = JSON.stringify(req.body);
-str = JSON.stringify(req.body, null, 4); // (Optional) beautiful indented output.
-console.log("in post of button ")
-console.log(str); // Logs output to dev tools console.
+    var button = req.body.party_id;
+    
+// str = JSON.stringify(req.body, null, 4); // (Optional) beautiful indented output.
+// console.log("in post of button ")
+// console.log(str); // Logs output to dev tools console.
     // var user_name=req.body.user;
     //  user_name=req.tempBody.userid;
     // var password=req.body.password;
