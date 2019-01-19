@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var session = 0;
+var session = 1;
 var user_name;
 
 router.post('/',function(req,res){
@@ -30,7 +30,14 @@ router.get('/', function(req, res, next) {
         res.send('0');
     }
     else{
-        res.send('1');
+        console.log("sending voter data before")
+
+        voters.findById(userid, function (err, voter) {
+            console.log("sending voter data")
+            res.send('sajdfhifdhgsdifhncdsfjcawcigh');
+        });
+
+
 
     }
 });
