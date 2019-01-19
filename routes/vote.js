@@ -3,13 +3,14 @@ var router = express.Router();
 
 var session = 1;
 // var user_name ;
-var userid = "5c4244d5b1a3cc0e3c904cec";
+ userid = "5c4244d5b1a3cc0e3c904cec";
 
 router.post('/',function(req,res){
     var tempBody = {
         userid : "5c4244d5b1a3cc0e3c904cec"
 
     }
+
     // var user_name=req.body.user;
      user_name=req.tempBody.userid;
     // var password=req.body.password;
