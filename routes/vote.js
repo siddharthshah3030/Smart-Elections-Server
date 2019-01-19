@@ -31,22 +31,28 @@ router.get('/', function(req, res, next) {
         res.send('0');
     }
     else{
-        console.log("sending voter data before")
+        // console.log("sending voter data before")
         var userid = "5c4244d5b1a3cc0e3c904ce8";
 
         voter.findById(userid, function (err, voter) {
             campaign.findOne({ name: voter.region }, function (err, location) {
                 var str = "";
+                var int = 1;
                 location.candidates.map(e=>{
+
                     console.log(e.party.abb)
+                    str = str + int+"-"
+                    str = str + e.party.abb
+                    str = str + " "
 
+                    int++;
                 })
-            console.log(location.candidates[0] )
+            console.log(str )
 
-            res.send('sajdfhifdhgsdifhncdsfjcawcigh');
+            res.send(str);
         });
-            console.log(voter.region)
-            console.log("iuchniu")
+            // console.log(voter.region)
+            // console.log("iuchniu")
         });
         // voter.findOne({ id: 'ERMOxqvujy' }, function (err, adventure) {
         //     console.log("sending voter data find one ")
