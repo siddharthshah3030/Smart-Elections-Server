@@ -78,9 +78,9 @@ for (var i = 0; i < 500; ) {
 
         candi = {
             name: faker.name.findName(),
+            candidateId : makeAd(),
             party: {
                 name: PAR[i % 10][0],
-                candidateId : makeid(),
 
                 abb: PAR[i % 10][1],
 
