@@ -2,11 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 var session = 1;
-var user_name;
+// var user_name ;
+var userid = "5c4244d5b1a3cc0e3c904cec";
 
 router.post('/',function(req,res){
     var tempBody = {
-        userid : "12345"
+        userid : "5c4244d5b1a3cc0e3c904cec"
 
     }
     // var user_name=req.body.user;
@@ -31,11 +32,16 @@ router.get('/', function(req, res, next) {
     }
     else{
         console.log("sending voter data before")
+        var userid = "5c4244d5b1a3cc0e3c904ce8";
 
-        voters.findById(userid, function (err, voter) {
-            console.log("sending voter data")
+        voter.findById(userid, function (err, voter) {
+            console.log("voter")
             res.send('sajdfhifdhgsdifhncdsfjcawcigh');
         });
+        // voter.findOne({ id: 'ERMOxqvujy' }, function (err, adventure) {
+        //     console.log("sending voter data find one ")
+
+        // });
 
 
 
