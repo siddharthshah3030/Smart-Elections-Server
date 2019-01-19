@@ -208,6 +208,7 @@ contract ElectionCampaign{
         uint id;
         uint toCandidate;
         bool voted;
+        bool exist;
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////
@@ -246,8 +247,18 @@ contract ElectionCampaign{
         _;
     }
 
-    modifier checkVoter(uint id){
+    modifier checkVoted(uint id){
         require(voters[id].voted,"Voter does not voted");
+        _;
+    }
+
+    modifier checkVoterExist(uint id){
+        require(voters[id].exist,"Voter exists");
+        _;
+    }
+
+    modifier checkNotVoterExist(uint id){
+        require(voters[id].exist,"Voter exists");
         _;
     }
 
@@ -354,16 +365,24 @@ contract ElectionCampaign{
         return votersCount;
     }
 
-    function getVote(uint id)public view checkVoter(id) returns(uint){
+    function getVote(uint id)public view checkVoted(id) returns(uint){
         return (voters[id].toCandidate);
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////
+    function registerVoter(uint id) public checkNotVoterExist(id){
+        voters[id] = Voter(id,0,false,true);
+    }
 
+    function unRegisterVoter(uint id) public checkNotVoterExist(id){
+        voters[id].exist = false;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
     // Actual Vote Function
     function vote(uint id, uint candidateID) public restricted checkCandidate(candidateID){
         require(!voters[id].voted,"Voter already voted");
-        voters[id] = Voter(id,candidateID,true);
+        voters[id].voted = true;
+        voters[id].toCandidate = candidateID;
         candidates[candidateID].votes++;
         votersCount++;
     }
