@@ -38,7 +38,7 @@ router.get('/', function(req, res, next) {
             campaign.findOne({ name: voter.region }, function (err, location) {
                 var str = "";
                 location.candidates.map(e=>{
-                    console.log(e.abb)
+                    console.log(e.party.abb)
 
                 })
             console.log(location.candidates[0] )
