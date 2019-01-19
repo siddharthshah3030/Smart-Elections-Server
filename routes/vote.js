@@ -35,7 +35,8 @@ router.get('/', function(req, res, next) {
         var userid = "5c4244d5b1a3cc0e3c904ce8";
 
         voter.findById(userid, function (err, voter) {
-            console.log("voter")
+            console.log(voter.region)
+            console.log("iuchniu")
             res.send('sajdfhifdhgsdifhncdsfjcawcigh');
         });
         // voter.findOne({ id: 'ERMOxqvujy' }, function (err, adventure) {
