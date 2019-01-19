@@ -14,7 +14,7 @@ var votingMachine = require('./routes/vote');
 //SiD
 // below code seems to run ans work but still some errors are not fixed  
 // var drizzle = require('drizzle');
-console.log("drizzle call")
+// console.log("drizzle call")
 // console.log(drizzle)
 // var Web3 = require('web3');
 var etherum = require('./etherum');

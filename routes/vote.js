@@ -36,7 +36,12 @@ router.get('/', function(req, res, next) {
 
         voter.findById(userid, function (err, voter) {
             campaign.findOne({ name: voter.region }, function (err, location) {
-            console.log(location )
+                var str = "";
+                location.candidates.map(e=>{
+                    console.log(e.abb)
+
+                })
+            console.log(location.candidates[0] )
 
             res.send('sajdfhifdhgsdifhncdsfjcawcigh');
         });
