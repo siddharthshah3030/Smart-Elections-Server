@@ -4,7 +4,7 @@ var router = express.Router();
 var session = 0;
 var user_name;
 
-app.post('/',function(req,res){
+router.post('/',function(req,res){
     var tempBody = {
         userid : "12345"
 
