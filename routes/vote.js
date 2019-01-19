@@ -21,6 +21,7 @@ router.post('/',function(req,res){
         console.log("time out function ")
         //your code to be executed after 1 second
       }, 10000);
+      res.send("hello there")
     // console.log("User name = "+user_name+", password is "+password);
     res.end("yes");
   });
@@ -40,7 +41,7 @@ router.get('/', function(req, res, next) {
                 var int = 1;
                 location.candidates.map(e=>{
 
-                    console.log(e.party.abb)
+                    // console.log(e.party.abb)
                     str = str + int+"-"
                     str = str + e.party.abb
                     str = str + " "

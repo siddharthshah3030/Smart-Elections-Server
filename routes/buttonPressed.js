@@ -10,11 +10,15 @@ router.post('/',function(req,res){
         userid : "5c4244d5b1a3cc0e3c904cec"
 
     }
-    console.log(req.body);
+    // console.log(req.body);
+    str = JSON.stringify(req.body);
+str = JSON.stringify(req.body, null, 4); // (Optional) beautiful indented output.
+console.log("in post of button ")
+console.log(str); // Logs output to dev tools console.
     // var user_name=req.body.user;
-     user_name=req.tempBody.userid;
+    //  user_name=req.tempBody.userid;
     // var password=req.body.password;
-    console.log("User name = "+user_name+", password is ");
+    // console.log("User name = "+user_name+", password is ");
     session = 1;
     setTimeout(function() {
         session = 0;
@@ -48,9 +52,9 @@ router.get('/', function(req, res, next) {
 
                     int++;
                 })
-            console.log(str )
+            console.log("button resses" )
 
-            res.send(str);
+            res.send("button pressed");
         });
             // console.log(voter.region)
             // console.log("iuchniu")
