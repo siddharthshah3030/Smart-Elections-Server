@@ -26,15 +26,22 @@ router.post('/',function(req,res){
     // console.log("User name = "+user_name+", password is "+password);
     res.end("yes");
   });
+  voter.find( function (err, docs) {
+
+    console.log(docs)
+
+  });
 
 
-router.get('/', function(req, res, next) {
-    if(session==0){
+  router.get('/', function(req, res, next) {
+
+      if(session==0){
         res.send('0');
     }
     else{
         // console.log("sending voter data before")
         var userid = "5c4244d5b1a3cc0e3c904ce8";
+
 
         voter.findById(userid, function (err, voter) {
             campaign.findOne({ name: voter.region }, function (err, location) {

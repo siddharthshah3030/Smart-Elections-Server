@@ -10,6 +10,9 @@ var router = express.Router();
 // import react from react
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  voter.find({}, function (err, vo) {
+    res.send(vo);
+});
   // var ip = req.headers['x-real-ip']
   // console.log("testing ip address")
   // console.log(req.connection.remoteAddress)

@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 //Schemas
 var locations = require('./schema/location'); 
-var voter = require('./schema/voter'); 
+var voters = require('./schema/voter'); 
 var party = require('./schema/party'); 
 
 
@@ -18,5 +18,9 @@ var party = require('./schema/party');
 //  var voterLog = require('./seedVoter');
 //  var partylog = require('./seedParty');
 
+// voter.find({ function (err, docs) { 
+
+//     console.log(docs)
+// }})
 
 
