@@ -6,7 +6,7 @@
 
 ### Voting Machine Repository [here](https://github.com/utkarshchandrakar/smart-elections)
 
-### This Repository consist of etherum side smart contract code for Smart Elections.
+### This Repository consist of server side code for Smart Elections.
 
 <p align="center">
   <img src="https://github.com/Shritesh99/Smart-Elections_Solidity/blob/master/imgs/Canvas%205.jpg" />
